@@ -1,5 +1,4 @@
 ## Running PySpark on Docker
-==============================
 
 
 ## First things first
@@ -27,4 +26,5 @@
 
 # Now we need to execute the pyspark file using the following command
 docker-compose exec spark-master spark-submit --master spark://spark-master:7077 /opt/bitnami/spark/anyfilename.py
+
 docker-compose exec spark-master spark-submit --master spark://spark-master:7077 /opt/bitnami/spark/app/basics/create_rdd.py

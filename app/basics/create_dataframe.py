@@ -1,4 +1,4 @@
-from spark_connection import spark
+from app.spark_connection import spark_conn
 
 # Sample data: list of tuples
 data = [("Alice", 25), ("Bob", 30), ("Charlie", 35)]
@@ -7,7 +7,7 @@ data = [("Alice", 25), ("Bob", 30), ("Charlie", 35)]
 columns = ["Name", "Age"]
 
 # Create a DataFrame from the data
-df = spark.createDataFrame(data, columns)
+df = spark_conn.createDataFrame(data, columns)
 
 # Show the DataFrame content
 df.show()
